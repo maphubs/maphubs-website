@@ -23,7 +23,7 @@ WORKDIR /app
 
 COPY package.json /app/package.json
 COPY npm-shrinkwrap.json /app/npm-shrinkwrap.json
-RUN npm install
+RUN npm install --no-optional
 
 COPY . /app
 RUN chmod +x /app/docker-entrypoint.sh

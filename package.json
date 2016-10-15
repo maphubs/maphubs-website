@@ -83,6 +83,9 @@
     "winston-daily-rotate-file": "^1.3.1",
     "winston-loggly": "1.3.1"
   },
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
   "devDependencies": {
     "babel-eslint": "6.1.2",
     "eslint": "3.6.0",
