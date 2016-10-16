@@ -19,14 +19,6 @@ var session = require('express-session');
 var log = require('./services/log.js');
 
 
-var Promise = require('bluebird');
-//promise config needs to be here so it runs before anything else uses bluebird.
-Promise.config({
-    // Enable cancellation.
-    cancellation: true
-});
-
-
   require('babel-core/register')({
     ignore: /node_modules\/(?!(react-slick|reflux-state-mixin)).*/
   });
