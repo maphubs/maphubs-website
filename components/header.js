@@ -24,7 +24,7 @@ var Header = React.createClass({
 
   componentDidMount() {
     $(".button-collapse").sideNav();
-    $(".dropdown-button").dropdown({hover: true});
+    //$(".dropdown-button").dropdown({hover: true});
   },
 
   render() {
@@ -88,7 +88,7 @@ var Header = React.createClass({
               <a className={crowdcoverClasses} href='/crowdcover'>{this.__('About CrowdCover')}</a>
             </li>
             <li className="nav-link-wrapper">
-              <a  className="nav-link-item" href='http://help.maphubs.com'>{this.__('Help')}</a>
+              <a  className="nav-link-item" href='http://help.maphubs.com' target="_blank">{this.__('Help')}</a>
             </li>
 
           </ul>
