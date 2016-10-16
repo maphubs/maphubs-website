@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "DEBUG=*,-express:*,-babel,-oauth2orize,-morgan,-express-session,-tessera,-body-parser:*,-compression,-pool2,-knex:* node --max-old-space-size=4096 app.js",
+    "dev": "DEBUG=maphubs:* nodejs-dashboard -p 9839 -- node --max-old-space-size=4096 app.js",
     "build": "NODE_ENV=production node node_modules/webpack/bin/webpack.js --config webpack.config.min.js",
     "debug": "DEBUG=*,-express:*,-babel,-oauth2orize,-morgan,-express-session,-tessera,-body-parser:*,-compression,-pool2,-knex:* node --debug app.js",
     "prod-test": "NODE_ENV=production node app.js",
@@ -89,6 +90,7 @@
     "eslint-plugin-babel": "3.3.0",
     "eslint-plugin-flowtype": "^2.7.1",
     "eslint-plugin-react": "6.3.0",
+    "nodejs-dashboard": "^0.1.1",
     "webpack-dev-middleware": "1.8.3"
   }
 }
