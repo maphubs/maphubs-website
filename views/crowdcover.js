@@ -30,7 +30,7 @@ var CrowdCover = React.createClass({
         <div>
           <Header activePage="crowdcover"/>
             <SubPageBanner locale={this.props.locale}
-              img="/assets/home/Moabi-Aerial.jpg"
+              img="/assets/home/Moabi-Forest.jpg"
                title={this.__('CrowdCover')}
                subTitle={'CrowdCover LLC is a Washington D.C. based tech company providing consulting services and support for the open-source MapHubs software'} />
           <main className="container">
@@ -42,7 +42,7 @@ var CrowdCover = React.createClass({
                 <div className="row">
                   <div className="col s12 m7 l7">
                     <a href="http://rdc.moabi.org" target="_blank"><h5>Moabi DRC</h5></a>
-                    
+
                     <p lang="en" style={{fontSize: '18px', marginTop: 0}}>
                       Moabi DRC is an independent initiative that collaboratively monitors natural resource use in the Democratic Republic of the Congo. Our community works toward a more transparent, equitable, and sustainable future for the people and environment of DRC.
                     </p>

@@ -5,8 +5,8 @@ var Footer = require('../components/footer');
 var Carousel = require('nuka-carousel');
 import SliderDecorators from '../components/Home/SliderDecorators';
 
-var OnboardingLinks = require('../components/Home/OnboardingLinks');
-var MapHubsProLinks = require('../components/Home/MapHubsProLinks');
+//var OnboardingLinks = require('../components/Home/OnboardingLinks');
+//var MapHubsProLinks = require('../components/Home/MapHubsProLinks');
 var config = require('../clientconfig');
 
 var Reflux = require('reflux');
@@ -98,29 +98,47 @@ var Home = React.createClass({
       <main style={{margin: 0, height: '100%'}}>
         {homePageCarousel}
         <div className="container">
-        <div className="row" style={{marginBottom: '50px'}}>
+        <div className="row no-margin" style={{marginBottom: '50px'}}>
             <h4 lang="en">MapHubs is Now Map for Environment</h4>
-          <p>
-            (add M4E banner) <br />
-            Find it at <a href="https://mapforenvironment.org">https://mapforenvironment.org</a>).
-            It still has all the same create features and your account will be the same. For more information about this migration, please see our <a href="" target="_blank">post here</a>.
+            <div className="valign-wrapper">
+            <div className="col s12 m6 l6 valign">
 
-            <div className="row center center-align">
-              <a className="btn waves-effect" style={{borderRadius: '25px'}} lang="en" href="/services">Go to Map for Environment</a>
-            </div>
-          </p>
+              <p>
+                Since its release in March, MapHubs has become a home for hundreds of open environmental map layers. After announcing Map for Environment last month at the IUCN World Conservation Congress we have received awesome feedback around using OpenStreetMap (OSM) to map areas such as logging roads, palm plantations, and dams. Combining the OSM base map with MapHubs layers on land rights, deforestation, animal habitats, and more allows our users to truly understand what is happening on the ground. MapHubs is a tool not just to quantify the problem, but to tell the stories of what is happening. 
+              </p>
+              <p>
+                We have merged MapHubs.com into Map for Environment and all of our environmental work will now be part of Map For Environment.
+              </p>
+
+
+          </div>
+          <div className="col s12 m6 l6 valign" style={{height: '100%'}}>
+            <a className="" href="https://medium.com/map-for-environment" target="_blank">
+              <img className="responsive-img " src="/assets/home/maphubs-m4e.jpg" style={{width: '600px'}}></img>
+            </a>
+          </div>
+          </div>
+       </div>
+       <div className="row center center-align">
+         <a className="btn waves-effect" style={{borderRadius: '25px'}} lang="en" href="https://medium.com/map-for-environment" target="_blank">Learn More</a>
        </div>
        <div className="divider" />
-       <div className="row" style={{marginBottom: '50px'}}>
+       <div className="row no-margin" style={{marginBottom: '50px'}}>
            <h4 lang="en">MapHubs Software</h4>
-         <p>
-
-           MapHubs is still the open-source software project behind Map for Environment.
+           <div className="valign-wrapper">
+         <div className="col s12 m6 l6 valign">
+             <img className="responsive-img" src="/assets/home/maphubs.jpg" style={{width: '100%'}}></img>
+         </div>
+         <div className="col s12 m6 l6 valign">
+           <p>MapHubs is the open-source software project behind Map for Environment.
            You can use MapHubs on your own site or inside your organization.
-           <div className="row center center-align">
-             <a className="btn waves-effect" style={{borderRadius: '25px'}} lang="en" href="/services">Learn More About MapHubs</a>
-           </div>
-         </p>
+           </p>
+
+         </div>
+          </div>
+      </div>
+      <div className="row center center-align">
+        <a className="btn waves-effect" style={{borderRadius: '25px'}} lang="en" href="/services">Learn More About MapHubs</a>
       </div>
       <div className="divider" />
          <div className="row" style={{marginBottom: '50px'}}>
