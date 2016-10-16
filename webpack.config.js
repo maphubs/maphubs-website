@@ -12,15 +12,14 @@ module.exports = {
     crowdcover: "./client/crowdcover",
     services: "./client/services",
     journalists: "./client/journalists",
-    vendor: ["./materialize.config.scss", "jquery", "react", "react-dom", "materialize-css", "reflux", "reflux-state-mixin", "debug", "bluebird", "classnames", "intl"],
+    vendor: ["./materialize.config.scss", "jquery", "react", "react-dom", "materialize-css", "reflux", "reflux-state-mixin", "debug", "superagent", "classnames", "intl"],
     locales: ["./services/locales"],
     clientconfig: ["./clientconfig"]
   },
 
   resolve: {
     modulesDirectories: ['node_modules'],
-    alias: {
-    },
+
     extensions: ['', '.js', '.jsx', '.json']
   },
 
@@ -49,7 +48,7 @@ module.exports = {
       test: /\.jsx?$/,
       loader: 'babel-loader',
 
-      include: [/i18n\.js/, /locales/, /views/, /client/, /components/, /stores/, /actions/, /services/, /reflux-state-mixin/],
+      include: [/i18n\.js/, /locales/, /views/, /components/, /stores/, /actions/, /services/, /client/, /react-slick/, /reflux-state-mixin/],
       query: {
         presets: [
           "es2015",
@@ -65,11 +64,6 @@ module.exports = {
       {test: /\.(woff|svg|ttf|eot|gif)([\?]?.*)$/, loader: "file-loader?name=[name].[ext]"}
 
     ],
-    postLoaders: [{
-          include: /node_modules\/mapbox-gl-shaders/,
-          loader: 'transform',
-          query: 'brfs'
-      }],
     noParse: [
       '/node_modules\/json-schema\/lib\/validate\.js/' //https://github.com/request/request/issues/1920
     ]
@@ -99,6 +93,3 @@ module.exports = {
     'unicode/category/So': '{}'
 }
 };
-
-//
-//  new webpack.optimize.DedupePlugin(),
