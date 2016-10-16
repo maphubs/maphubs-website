@@ -37,22 +37,51 @@ var CrowdCover = React.createClass({
 
             <div className="row" style={{marginTop: '30px'}}>
 
-                <h4 lang="en">Our background</h4>
-                <div className="row no-margin">
-                <div className="col s12 m12 l5">
-                  <p lang="en" style={{fontSize: '18px', marginTop: 0}}>
-
-                  </p>
-                </div>
-                <div className="col s12 m12 l7">
-                  <div  className="video-container">
-                    <iframe src="https://maphubs.com/map/embed/164/static" frameBorder="0"></iframe>
+                <h4 lang="en">Projects</h4>
+                <div className="divider" />
+                <div className="row">
+                  <div className="col s12 m7 l7">
+                    <a href="http://rdc.moabi.org" target="_blank"><h5>Moabi DRC</h5></a>
+                    
+                    <p lang="en" style={{fontSize: '18px', marginTop: 0}}>
+                      Moabi DRC is an independent initiative that collaboratively monitors natural resource use in the Democratic Republic of the Congo. Our community works toward a more transparent, equitable, and sustainable future for the people and environment of DRC.
+                    </p>
+                  </div>
+                  <div className="col s12 m5 l5">
+                    <a href="http://rdc.moabi.org" target="_blank">
+                      <img className="responsive-img" src="/assets/home/moabi.jpg" style={{width: '100%'}}></img>
+                    </a>
                   </div>
                 </div>
-              </div>
-              <p lang="en" style={{fontSize: '18px', marginTop: 0}}>
-                This vital data is locked up in a variety of data formats, at different scales, and increasingly fragmented, making it inaccessible to those who want to use it. A major reason for this is data producers (governments, companies, etc.) often don’t have a relationship those who use their data. This makes sharing their data a black box; they don’t know who downloads or uses it. This makes map data difficult to find and use in meaningful ways. Even if data is available, making maps is needlessly complicated and expensive, which disenfranchises many who simply want to make maps.
-              </p>
+                <div className="divider" />
+                <div className="row">
+                  <div className="col s12 m5 l5">
+                    <a href="http://loggingroads.org" target="_blank">
+                      <img className="responsive-img" src="/assets/home/loggingroads.png" style={{width: '100%'}}></img>
+                    </a>
+                  </div>
+                  <div className="col s12 m7 l7">
+                    <a href="http://loggingroads.org" target="_blank"><h5>Logging Roads</h5></a>
+                    <p lang="en" style={{fontSize: '18px', marginTop: 0}}>
+                      Using OpenStreetMap to monitor logging roads in the Congo basin.
+                    </p>
+                  </div>
+
+                </div>
+                <div className="divider" />
+                <div className="row">
+                  <div className="col s12 m7 l7">
+                    <a href="http://congomines.org" target="_blank"><h5>Congo Mines</h5></a>
+                    <p lang="en" style={{fontSize: '18px', marginTop: 0}}>
+                      A Carter Center project using Moabi technology to document mining operations and contracts in DRC.
+                    </p>
+                  </div>
+                  <div className="col s12 m5 l5">
+                    <a href="http://congomines.org" target="_blank">
+                      <img className="responsive-img" src="/assets/home/congo.jpg" style={{width: '100%'}}></img>
+                    </a>
+                  </div>
+                </div>
 
                 <div className="divider" />
 
