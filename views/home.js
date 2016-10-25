@@ -99,25 +99,18 @@ var Home = React.createClass({
         {homePageCarousel}
         <div className="container">
         <div className="row no-margin" style={{marginBottom: '50px'}}>
-            <h4 lang="en">MapHubs is Now Map for Environment</h4>
-            <div className="valign-wrapper">
-            <div className="col s12 m6 l6 valign">
-
-              <p>
-                Since its release in March, MapHubs has become a home for hundreds of open environmental map layers. After announcing Map for Environment last month at the IUCN World Conservation Congress we have received awesome feedback around using OpenStreetMap (OSM) to map areas such as logging roads, palm plantations, and dams. Combining the OSM base map with MapHubs layers on land rights, deforestation, animal habitats, and more allows our users to truly understand what is happening on the ground. MapHubs is a tool not just to quantify the problem, but to tell the stories of what is happening. 
-              </p>
-              <p>
-                We have merged MapHubs.com into Map for Environment and all of our environmental work will now be part of Map For Environment.
-              </p>
-
-
-          </div>
-          <div className="col s12 m6 l6 valign" style={{height: '100%'}}>
-            <a className="" href="https://medium.com/map-for-environment" target="_blank">
+          <h4 lang="en">MapHubs is Now Map for Environment</h4>
+          <div className="center center-align">
+            <a  href="https://medium.com/map-for-environment" target="_blank">
               <img className="responsive-img " src="/assets/home/maphubs-m4e.jpg" style={{width: '600px'}}></img>
             </a>
           </div>
-          </div>
+          <p>
+            Since its release in March, MapHubs has become a home for hundreds of open environmental map layers. After announcing Map for Environment last month at the IUCN World Conservation Congress we have received awesome feedback around using OpenStreetMap (OSM) to map areas such as logging roads, palm plantations, and dams. Combining the OSM base map with MapHubs layers on land rights, deforestation, animal habitats, and more allows our users to truly understand what is happening on the ground. MapHubs is a tool not just to quantify the problem, but to tell the stories of what is happening. 
+          </p>
+          <p>
+            We have merged MapHubs.com into Map for Environment and all of our environmental work will now be part of Map For Environment.
+          </p>
        </div>
        <div className="row center center-align">
          <a className="btn waves-effect" style={{borderRadius: '25px'}} lang="en" href="https://medium.com/map-for-environment" target="_blank">Learn More</a>
@@ -125,17 +118,14 @@ var Home = React.createClass({
        <div className="divider" />
        <div className="row no-margin" style={{marginBottom: '50px'}}>
            <h4 lang="en">MapHubs Software</h4>
-           <div className="valign-wrapper">
-         <div className="col s12 m6 l6 valign">
-             <img className="responsive-img" src="/assets/home/maphubs.jpg" style={{width: '100%'}}></img>
-         </div>
-         <div className="col s12 m6 l6 valign">
-           <p>MapHubs is the open-source software project behind Map for Environment.
-           You can use MapHubs on your own site or inside your organization.
-           </p>
-
-         </div>
+             <p>
+               MapHubs is the open-source software project behind Map for Environment.
+             You can use MapHubs on your own site or inside your organization.
+             </p>
+           <div className="center center-align">
+            <img className="responsive-img" src="/assets/home/maphubs.jpg" style={{width: '100%'}}></img>
           </div>
+
       </div>
       <div className="row center center-align">
         <a className="btn waves-effect" style={{borderRadius: '25px'}} lang="en" href="/services">Learn More About MapHubs</a>
@@ -143,7 +133,7 @@ var Home = React.createClass({
       <div className="divider" />
          <div className="row" style={{marginBottom: '50px'}}>
             <h4 lang="en">CrowdCover LLC</h4>
-           <p>MapHubs is a product of CrowdCover. CrowdCover LLC is a Washington D.C. based tech company providing consulting services and support for the open-source MapHubs software.</p>
+           <p style={{marginBottom: '10px'}}>MapHubs is a product of CrowdCover. CrowdCover LLC is a Washington D.C. based tech company providing consulting services and support for the open-source MapHubs software.</p>
              <div className="row center center-align">
                <a className="btn waves-effect" style={{borderRadius: '25px'}} lang="en" href="/crowdcover">Learn More About CrowdCover</a>
              </div>
