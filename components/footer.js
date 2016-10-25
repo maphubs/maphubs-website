@@ -29,7 +29,6 @@ var Footer = React.createClass({
               <div className="col l4 offset-l2 s12">
                 <ul>
                   <li><a className="text-darken-3 center" href="/about">{this.__('About') + ' MapHubs'}</a></li>
-                  <li><a className="text-darken-3 center" href="/crowdcover">{this.__('About') + ' CrowdCover'}</a></li>
                   <li>{this.__('Contact Us:')} <a className="text-darken-3 center" href="#" onClick={function(){HS.beacon.open();}}>{config.contactEmail}</a></li>
                   <li>Twitter: <a className="text-darken-3 center" href={'http://twitter.com/' + config.twitter}>@{config.twitter}</a></li>
                 </ul>
@@ -38,7 +37,7 @@ var Footer = React.createClass({
           </div>
           <div className="footer-copyright white">
             <div className="grey-text container center">
-              <small>&copy; 2016 CrowdCover LLC</small>
+              <small>&copy; 2016 <a href="http://crowdcover.us">CrowdCover LLC</a></small>
             </div>
           </div>
 

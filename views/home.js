@@ -37,7 +37,7 @@ var Home = React.createClass({
      var slides = [
        {
          title: this.__('Mapping for Everyone'),
-         text: config.productName + ' ' + this.__('is a home for open map data and an easy tool for making maps'),
+         text: 'MapHubs software makes beautiful maps for your website and social media',
          buttonText: this.__('Learn More'),
          link: '/about',
          img: '/assets/home/Moabi-Aerial.jpg'
@@ -51,8 +51,8 @@ var Home = React.createClass({
        },
        {
          title: this.__('Map for Environment'),
-         text:  this.__('Map for Evironment has map layers for environment, natural resources, and development'),
-         buttonText: this.__('Map for Environment'),
+         text:  this.__('MapHubs powers Map for Environment, a home for the world\'s open evironmental map data.' ),
+         buttonText: this.__('Go to Map for Environment'),
          link: 'https://mapforenvironment.org',
          img: '/assets/home/MapHubs-Map.jpg'
        },

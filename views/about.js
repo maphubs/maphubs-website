@@ -32,28 +32,39 @@ var About = React.createClass({
             <SubPageBanner locale={this.props.locale}
               img="/assets/home/Moabi-Aerial.jpg"
                title={this.__('About - MapHubs')}
-               subTitle={'MapHubs ' +this.__(`is a home for the world's open map data and an easy tool for making and sharing maps. Our mission is to help you tell your story using maps and to foster communities with impact.`)} />
+               subTitle={'MapHubs software makes beautiful maps for your website'} />
           <main className="container">
 
             <div className="row" style={{marginTop: '30px'}}>
 
-                <h4 lang="en">Our challenge</h4>
+                <h4 lang="en">What is MapHubs</h4>
                 <div className="row no-margin">
-                <div className="col s12 m12 l5">
+                <div className="col s12">
+
                   <p lang="en" style={{fontSize: '18px', marginTop: 0}}>
-                    Maps are critical to fighting climate change, eradicating poverty, and protecting imperiled biologically rich forests. They provide context to complex issues, illuminate risks, and evidence of impacts. While satellites give us a window in the state of the world’s rainforests, the fragmentation of tiger landscapes and the vulnerability of river deltas to climate change, they don’t the whole story. They don’t tell us who is causing the deforestation, where a river is going to be dammed, or who owns a farm.
+                    MapHubs is <a href="https://github.com/maphubs/maphubs" target="_blank">open-source</a> software that you can install on your website or on a server inside your network.
+                    We can provide <a href="/services">consulting services</a> to help you get started or to help you customize MapHubs for your needs.
                   </p>
 
+                  <p lang="en" style={{fontSize: '18px', marginTop: 0}}>
+                    MapHubs powers <a href="https://mapforenvironment.org">Map for Environment</a>.
+                    The easiest way to use MapHubs is through <a href="https://mapforenvironment.org">Map for Environment</a>.
+                    It is free for public data, and we plan to add premium features such as private data in the near future.
+                  </p>
+
+
+
                 </div>
-                <div className="col s12 m12 l7">
-                  <div  className="video-container">
-                    <iframe src="https://maphubs.com/map/embed/164/static" frameBorder="0"></iframe>
-                  </div>
+
+              </div>
+                <div className="row no-margin">
+              <div className="col s12">
+                <div  className="video-container">
+                  <iframe src="https://maphubs.com/map/embed/164/static" frameBorder="0"></iframe>
                 </div>
               </div>
-              <p lang="en" style={{fontSize: '18px', marginTop: 0}}>
-                This vital data is locked up in a variety of data formats, at different scales, and increasingly fragmented, making it inaccessible to those who want to use it. A major reason for this is data producers (governments, companies, etc.) often don’t have a relationship those who use their data. This makes sharing their data a black box; they don’t know who downloads or uses it. This makes map data difficult to find and use in meaningful ways. Even if data is available, making maps is needlessly complicated and expensive, which disenfranchises many who simply want to make maps.
-              </p>
+            </div>
+
               <div className="divider" />
                 <h4 lang="en">Our approach</h4>
                 <div className="row no-margin">
