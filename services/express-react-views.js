@@ -191,7 +191,7 @@ function createEngine(engineOptions) {
         }
 
         if(options.mailchimp && !local.disableTracking){
-          markup += '<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"d2eac39a023dd41d2dd00b58e","lid":"0cbfb0b04d"}) })</script>';
+          //markup += '<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"d2eac39a023dd41d2dd00b58e","lid":"0cbfb0b04d"}) })</script>';
         }
 
         if(!options.hideFeedback && req){
@@ -234,11 +234,10 @@ function createEngine(engineOptions) {
             <script>!function(e,o,n){
                 window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};
                 var t=n.beacon;
-                t.userConfig={icon: 'question', color: '#29ABE2', topArticles: true,
-                  topics: [{val: 'question', label: '` + t('Question') + `'},{val: 'suggestion', label: '` + t('Suggestion') + `'},{val: 'problem', label: '` + t('Report a Problem') + `'}],
+                t.userConfig={icon: 'question', color: '#29ABE2', topArticles: false,
                   translation: ` + beaconTranslationText +`,
                 },
-                t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!0,baseUrl:"//maphubs.helpscoutdocs.com/"},contact:{enabled:!0,formId:"59df584f-4d3b-11e6-aae8-0a7d6919297d"}};
+                t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:false,baseUrl:"//maphubs.helpscoutdocs.com/"},contact:{enabled:!0,formId:"59df584f-4d3b-11e6-aae8-0a7d6919297d"}};
                 var r=e.getElementsByTagName("script")[0],c=e.createElement("script");
                 c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});</script>
             `;
