@@ -106,11 +106,11 @@ var Home = React.createClass({
             </a>
           </div>
           <p>
-            We've decided to integrate MapHubs and our recently launched <a href="https://mapforenvironment.org">Map for Environment</a> site. You can now both map directly Openstreetmap and publish fast interactive MapHubs style maps.
+            We've decided to integrate MapHubs and our recently launched <a href="https://mapforenvironment.org">Map for Environment</a> site. You can now both map directly into <a href="https://osm.mapforenvironment.org">OpenStreetMap</a> and publish fast interactive MapHubs style maps.
             All of your data and accounts will stay the same. Read our <a href="https://mapforenvironment.org/user/map4env/story/61/MapHubs-is-now-Map-for-Environment" target="_blank">full announcement</a> to learn more about why are making this change and what it means for the future of Map for Environment and MapHubs.
             </p>
        </div>
-       <div className="row center center-align" style={{marginTop: '20px'}}>
+       <div className="row center center-align" style={{marginTop: '10px'}}>
          <a className="btn waves-effect" style={{borderRadius: '25px'}} lang="en" href="https://mapforenvironment.org/user/map4env/story/61/MapHubs-is-now-Map-for-Environment" target="_blank">Learn More</a>
        </div>
        <div className="divider" />
