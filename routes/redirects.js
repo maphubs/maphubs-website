@@ -1,4 +1,5 @@
 var config = require('../clientconfig');
+var proxy = require('express-http-proxy');
 
 module.exports = function(app) {
 
@@ -55,9 +56,7 @@ app.get('/map/*', function(req, res) {
   return res.redirect(301, config.redirectDomain + req.originalUrl);
 });
 
-app.get('/user/*', function(req, res) {
-  return res.redirect(301, config.redirectDomain + req.originalUrl);
-});
+
 
 app.get('/hub/*', function(req, res) {
   return res.redirect(301, config.redirectDomain + req.originalUrl);
@@ -79,5 +78,17 @@ app.get('/raster/*', function(req, res) {
   return res.redirect(301, config.redirectDomain + req.originalUrl);
 });
 
+/*
+app.get('/user/*', function(req, res) {
+  return res.redirect(301, config.redirectDomain + req.originalUrl);
+});
+*/
+
+app.use('/user/*', proxy(config.redirectDomain, {
+  forwardPath(req) {
+    var path = req.originalUrl;
+    return path;
+  }
+  }));
 
 };
